@@ -6,7 +6,7 @@ This is my personal portfolio website showcasing my work as a **Software Enginee
 
 ## 🌐 Live Site
 
-View the portfolio live: [jeanguya.github.io](https://jeanguya-portfolio.netlify.app/) 
+View the portfolio live: [https://jeanguya-portfolio.netlify.app/]
 ---
 
 ## 📁 Project Structure
