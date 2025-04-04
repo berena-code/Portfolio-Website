@@ -1,0 +1,446 @@
+body {
+    padding-top: 1px;
+    width: 100%;
+    height: auto;
+    font-family: 'Arial', sans-serif, 'Helvetica';
+    background-image: url(web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the entire nav */
+    align-items: center;
+    position: fixed;
+    top: 0; /* Fix the nav at the top */
+    background-color: rgba(0, 0, 0, 0.2); /* Add a semi-transparent background */
+    z-index: 1000; /* Ensure it stays above other elements */
+    padding: 10px 0;
+}
+
+.nav-menu li {
+    display:inline-block;
+    padding: 0px 20px;
+  }
+  
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    color: gray;
+    transition: 0.3s;
+}
+
+
+.styled-image {
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 1px;
+}
+
+/* Footer */
+.home-footer {
+    width: 98.5%;
+    position: absolute;
+    left: 0;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    padding: 9px;
+    background-color: grey;
+    color: white;
+    font-size: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Footer Links */
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+
+/* Style the container to use Flexbox */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px;
+    width: 70vw;
+    margin: 10;
+    padding: 2rem;
+}
+
+.container h2{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.p{
+    font-size: 18px;
+}
+/* Style each card */
+.card {
+    height: auto;
+    background-color: #f9f9f9d1;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+}
+
+ol{
+    font-size: 16px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Ensure cards are responsive */
+@media (max-width: 995px) {
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 50%;
+    }
+}
+
+.introduction {
+    flex: 1;
+    text-align: left;
+    display:block;
+    flex-direction: row;
+    bottom: 1;
+    margin: 2rem 0;
+    padding: 2rem;
+    margin-top: 0; /* Remove any margin on top */
+    padding-top: 0; /* Remove padding on top */
+    padding-bottom: 2rem; /* Keep some padding at the bottom */ 
+    width: 90%;   
+}
+
+.introduction-box {
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem auto; /* Center the box and add vertical spacing */
+    width: 90%; /* Adjust width as needed */
+    max-width: 1000px; /* Limit the max width */
+    background-color: #f9f9f9d1;
+    border: 2px solid grey;
+}
+
+
+.introduction h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.introduction h2{
+    text-decoration: underline;
+}
+
+.introduction p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.introduction ol {
+    font-size: auto;
+    line-height: 1.6;
+}
+
+.cv-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cv-download:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the main content and sidebar layout */
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9d1;
+    border: 2px solid grey;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    align-items: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding: 0;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+/* Home image styling */
+.home-img img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+h1{
+    font-size: 22px;
+}
+h3{
+    font-size: 24px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+
+/* Adjust the styling for the image */
+.styled-image {
+    width: 10px;
+    height: 10rem;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sidebar image horizontal layout */
+.home-img {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.home-img img {
+    margin-top: 0;
+    margin-bottom: 40%;
+    width: 170%;  /* Adjust the percentage to increase/decrease size */
+    height: 100% /* Maintain the aspect ratio */
+
+}
+
+
+/* Adjusting layout for small screen sizes */
+@media (max-width: 995px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+    }
+
+    .nav-menu {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center;
+        padding: 0;
+        right: -1px;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .introduction {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p, li, a, label, input, textarea, button {
+        font-size: 1rem;
+    }
+}
+
+.home-img img {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: keeps it circular */
+}
+
+/* Container for contact form */
+.contact-form {
+    margin-top: 3rem;  /* Add space from the content above */
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9d1;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 90%;
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    flex: 1;
+    font-size: 1.1rem; /* Adjust font size */
+    padding-right: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 2;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+button {
+    padding: 0.8rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #333;
+}
