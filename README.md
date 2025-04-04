@@ -11,14 +11,13 @@ View the portfolio live: [https://jeanguya-portfolio.netlify.app/]
 
 ## 📁 Project Structure
 
-```
-📦 portfolio/
- ┣ 📜 index.html
- ┣ 📜 styles.css
- ┣ 📜 profile.jpg
- ┣ 📜 Jean Guya CV.pdf
- ┗ 📜 README.md
-```
+📦 portfolio
+📜 index.html
+📜 styles.css
+📜 profile.jpg
+📜 Jean Guya CV.pdf
+📜 README.md
+
 
 ---
 
