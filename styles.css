@@ -35,7 +35,7 @@ body {
 }
 
 .nav-menu a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: gray;
     transition: 0.3s;
 }
@@ -83,16 +83,24 @@ img {
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 20px;
-    width: 70vw;
+    grid-gap: 10px;
+    width: 68vw;
     margin: 10;
-    padding: 2rem;
+    padding-top: 0; /* Remove padding on top */
+    padding-bottom: 0; /* Remove padding on bottom */
+    padding-left: 1; /* Remove padding on left */
 }
 
 .container h2{
     font-size: 20px;
     margin-bottom: 1rem;
     text-align: left;
+}
+
+.container ol {
+    font-size: 18px; /* Match the font size of other container contents */
+    text-align: justify; /* Keep the text alignment as specified */
+    line-height: 1.6; /* Optional: Improve readability */
 }
 
 .p{
@@ -135,8 +143,8 @@ ol{
     text-align: left;
     display:block;
     flex-direction: row;
-    bottom: 1;
-    margin: 2rem 0;
+    bottom: 0;
+    margin: 2rem ;
     padding: 2rem;
     margin-top: 0; /* Remove any margin on top */
     padding-top: 0; /* Remove padding on top */
@@ -146,10 +154,10 @@ ol{
 
 .introduction-box {
     border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
+    padding: 1rem; /* Padding inside the box */
     box-shadow: 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 2rem auto; /* Center the box and add vertical spacing */
-    width: 90%; /* Adjust width as needed */
+    margin: 1rem auto; /* Center the box and add vertical spacing */
+    width: auto; /* Adjust width as needed */
     max-width: 1000px; /* Limit the max width */
     background-color: #f9f9f9d1;
     border: 2px solid grey;
@@ -163,7 +171,7 @@ ol{
 }
 
 .introduction h2{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .introduction p {
@@ -201,34 +209,36 @@ ol{
 }
 
 .sidebar {
-    width: 25%;
+    width: auto;
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9d1;
     border: 2px solid grey;
-    padding: 70px;
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     height: 100vh;
     align-items: flex-start;
+    margin-top: 17px;
 }
 
 .sidebar h2 {
     font-size: 20px;
-    margin-bottom: 15px;
     text-align: left;
 }
 
 .sidebar h3 {
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: auto;
     padding: 0;
     margin-top: 0;
+    text-decoration: underline;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    margin-top: auto;
 }
 
 .sidebar li {
@@ -257,7 +267,7 @@ h1{
 h3{
     font-size: 24px;
     font-weight: lighter;
-    text-decoration: underline;
+    text-decoration: none;
     color: #007BFF;
 }
 
@@ -279,15 +289,18 @@ h3{
     display: flex;
     justify-content:center;
     align-items: center;
-    margin-top: 0;
+    margin-left: -30px;
+    margin-top: -20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 130%;  /* Adjust the percentage to increase/decrease size */
+    height: 200% /* Maintain the aspect ratio */
 }
 
 .home-img img {
-    margin-top: 0;
-    margin-bottom: 40%;
-    width: 170%;  /* Adjust the percentage to increase/decrease size */
-    height: 100% /* Maintain the aspect ratio */
-
+    width: 50vw; /* 50% of the viewport width */
+    height: auto;
+    margin-right: 0px;
 }
 
 
@@ -385,20 +398,20 @@ h3{
 }
 
 .home-img img {
-    width: 150px;  /* Adjust size as needed */
-    height: auto;
-    border-radius: 50%; /* Optional: keeps it circular */
+    width: 200px;  /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 20%; /* Optional: keeps it circular */
 }
 
 /* Container for contact form */
 .contact-form {
-    margin-top: 3rem;  /* Add space from the content above */
+    margin-top: 1rem;  /* Add space from the content above */
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9d1;
     border: 2px solid grey;
     border-radius: 10px;
-    width: 90%;
+    width: auto;
 }
 
 /* Form group styling */
